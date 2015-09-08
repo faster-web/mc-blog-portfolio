@@ -3,6 +3,15 @@ $light: #9a9da4
 $highlight: #8bc6db
 $border: #E9E9E9
 
+
+.clearfix:before,
+.cleaffix:after
+	content: " "
+	display: table
+
+.clearfix:after
+	clear: both
+
 #main-navigation
 	padding: 2.5em 5%
 
@@ -15,3 +24,11 @@ $border: #E9E9E9
 		text-decoration:none
 		color: $dark
 		float: left
+
+	nav
+		float: right
+		a
+			color: $dark
+			text-decoration: none
+			margin: 0 1rem
+			font-size: 1rem
