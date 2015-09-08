@@ -44,6 +44,7 @@ body
 
 	nav
 		float: right
+		/* local style for a */
 		a
 			color: $dark
 			text-decoration: none
@@ -57,10 +58,18 @@ body
 
 .about
 	padding: 0 7.5% 0 0
+	/* local style for a */
 	a
 		color: $highlight
 		font-weight: 500
 		text-decoration: none
+
+/* global style for a */
+a
+	text-decoration: none
+	color: $dark
+	&:hover
+		color: $highlight	
 
 hr
 	color: $light
@@ -79,4 +88,7 @@ hr
 			color: $dark
 			margin-left: 1em
 			padding-top: 0.2em
+			&:hover
+				color: $highlight
+				
 
