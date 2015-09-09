@@ -7,4 +7,4 @@ For icons, I'm using Font-Awesome CDN.
 For fonts, I'm using Google Fonts
 
 # Screenshot:
-![In action](http://s15.postimg.org/6wgvwwbff/2015_09_08_15h54_47.png)
+![In action](http://s24.postimg.org/vmsld4ow5/2015_09_09_23h38_24.png)
