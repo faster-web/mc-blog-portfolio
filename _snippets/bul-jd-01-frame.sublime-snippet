@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+doctype html
+html
+	head
+		title $1
+		link(rel="stylesheet", href="$2")
+		link(href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css')
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+	body
+		header#main-navigation.clearfix
+			a.name(href="#") $3
+			nav
+				a(href="#") $4
+				a(href="#") $5
+				a(href="#") $6
+		
+		// Insert bul-jd-02-posts or bul-jd-03-home
+		$9
+
+		footer#main-footer
+			p.copyright &copy; 2015 | $8
+			nav
+				a(href="")
+					i.fa.fa-github
+				a(href="")
+					i.fa.fa-facebook
+				a(href="")
+					i.fa.fa-twitter
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bul-jd-01-frame</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

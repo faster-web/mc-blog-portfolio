@@ -19,9 +19,12 @@ body
 	width: 90%
 	margin: 0 auto
 
+.wrapper-padding
+	padding: 2rem 0
+
 /* clearfix */
 .clearfix:before,
-.cleaffix:after
+.clearfix:after
 	content: " "
 	display: table
 
@@ -67,14 +70,44 @@ body
 	width:27.5%
 	padding: 0 2.5%
 
-/* box-sizing to set 3 inline column on welcome page */
+/* box-sizing to set 3 inline column */
 *
 	box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6, p, ul, li
+	color: $dark
+
+h1
+	font-size: 2.5rem
+
+h2
+	font-size: 2rem
+
+h3
+	font-size: 1.75rem
+
+h4
+	font-size: 1.375rem
+
+h5
+	font-size: 1.25rem
+
+h6
+	font-size: 1rem
+
+p, 
+li
+	font-size: 1.1rem
+	line-height: 1.75
 
 .homepage-content
 	h2
 		font-size: 1rem
 		text-transform: uppercase
+	h3
+		font-size: 1.35em
+		font-weight: 400
+		margin-bottom: 0.5em
 
 .date
 	font-size: .80em
@@ -124,7 +157,7 @@ hr
 
 #page-title
 	text-align: center
-	/*border-bottom: 1px solid $border*/
+	border-bottom: 1px solid $border
 	padding: 2em 0
 	font-size: 1rem
 	text-transform: uppercase
@@ -143,11 +176,44 @@ hr
 
 .skinny-wrapper
 	width: 90%
-	max-width: 760px
+	max-width: 800px
 	margin: 0 auto
 
-/* pagination */
+/* sample-post or post-show-content */
+header
+	text-align: left
+	.date
+		font-size: 0.9em
+		color: $light
 
+/* image */
+/*img
+	.align-left
+		float: left
+		margin-right: 1em
+	.align-center
+		float: center*/
+
+figure
+	display: block
+	//min-width: 400px
+	//min-height: 300px
+	overflow: hidden
+	background-color: white
+	margin: 0
+	padding: 1em
+	text-align: center
+	img
+		//min-width: 350px
+		//min-height: 250px
+		border: 1px solid $dark
+		overflow: hidden
+	.figcaption
+		font-size: 1rem
+		font-style: bolder
+		color: $dark
+
+/* pagination */
 .pagination:before,
 .pagination:after
 	content: " "

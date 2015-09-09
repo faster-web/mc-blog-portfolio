@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+h1#page-title $1
+#post-wrapper.skinny-wrapper
+	.post
+		p.date $2
+		h1: a(href="#") $3
+		p(align="justify") $4
+		h6: a(href="#") READ THE FULL ARTICLE &nbsp;&gt;&gt;
+		hr
+	.pagination
+		span.previous-page.disabled 
+			| Previous
+		em.current 
+			| 1
+		a(rel="next", href="#") 
+			| 2
+		a(rel="next", href="#") 
+			| 3
+		a(rel="next", href="#") 
+			| 4
+		a.next-page(href="#") 
+			| Next
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bul-jd-02-posts</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -7,45 +7,24 @@ html
 		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
 	body
 		header#main-navigation.clearfix
-			a.name(href="#") Gema Buj
+			a.name(href="index.html") Gema Buj
 			nav
-				a(href="#") Article
+				a(href="posts.html") Article
 				a(href="#") Projects
 				a(href="#") Contact
+		
+		//h1#page-title Welcome to My Humble Abode
 		.wrapper.wrapper-padding.clearfix
-			.col-1.about
-				h2 About
-				hr
-				p(align="justify") 
-				| Hello. My name is Gema Buj. Nice to meet you. Why I created this 
-				a(href="") cool blog dash portfolio
-				| , you said? Nice questions, and I'll answer it along the way I created this blog dash portfolio. Bear with me.
-				p(align="justify") The range of awesomeness in this blog dash portfolio are diverse, from 'Meh' into 'Ok, I guessed' and finally 'Wow, dude!'. Yeah, I know, right.
-
-			.col-2
-				h2 Projects
-				hr
-				p(align="justify") Here are several projects that I've been completed so far.
-				h3: a(href="#") Blog projects using Jekyll
-				p(align="justify").date February 14th, 2015
-				h3: a(href="#") Model-Viewer-Controller using Ruby on Rails
-				p(align="justify").date March 12nd, 2015 
-
-			.col-3
-				h2 Blog Post
-				hr
-				p(align="justify") Here are several my food for thought post for the last 3 years of my time blogging.
-				h3: a(href="#") Employment nowdays: Why the long face?
-				p(align="justify").date February 9th, 2015
-				h3: a(href="") Buckle up! Be a good web developer
-				p(align="justify").date April 13th, 2015 
-
+			include ../_includes/_home-about
+			include ../_includes/_home-projects
+			include ../_includes/_home-blogposts
+			
 		footer#main-footer
 			p.copyright &copy; 2015 | Gema Buj
 			nav
-				a(href="")
+				a(href="https://github.com/echo-man")
 					i.fa.fa-github
-				a(href="")
+				a(href="https://github.com/gemabuj")
 					i.fa.fa-github-alt
 				a(href="")
 					i.fa.fa-twitter
