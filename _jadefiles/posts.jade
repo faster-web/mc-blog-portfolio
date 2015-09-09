@@ -1,0 +1,44 @@
+doctype html
+html
+	head
+		title Gema Buj - A Blog and Portfolio Combined
+		link(rel="stylesheet", href="_scss/main.css")
+		link(href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css')
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+	body
+		header#main-navigation.clearfix
+			a.name(href="#") Gema Buj
+			nav
+				a(href="#") Article
+				a(href="#") Projects
+				a(href="#") Contact
+
+		h1#page-title My food for thought posts so far..
+		#post-wrapper.skinny-wrapper
+			include ../_includes/_post1
+			include ../_includes/_post2
+			include ../_includes/_post3
+			include ../_includes/_post4
+			.pagination
+				span.previous-page.disabled 
+					| Previous
+				em.current 
+					| 1
+				a(rel="next", href="#") 
+					| 2
+				a(rel="next", href="#") 
+					| 3
+				a(rel="next", href="#") 
+					| 4
+				a.next-page(href="#") 
+					| Next
+
+		footer#main-footer
+			p.copyright &copy; 2015 | Gema Buj
+			nav
+				a(href="")
+					i.fa.fa-github
+				a(href="")
+					i.fa.fa-github-alt
+				a(href="")
+					i.fa.fa-twitter

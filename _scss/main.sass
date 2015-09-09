@@ -31,6 +31,7 @@ body
 /* main navigation and its nested .name and nav*/
 #main-navigation
 	padding: 2.5em 5%
+	border-bottom: 1px solid $border
 
 	.name
 		font-weight: 600
@@ -74,7 +75,12 @@ a
 		color: $highlight	
 
 hr
-	color: $light
+	display: block
+	width: 7em
+	height: 3px
+	border: 0
+	border-top: 3px solid $highlight
+	margin: 2rem 0
 
 #main-footer
 	padding: 2.5em 5%
@@ -92,5 +98,68 @@ hr
 			padding-top: 0.2em
 			&:hover
 				color: $highlight
+
+/* style for about pages */
+
+#page-title
+	text-align: center
+	/*border-bottom: 1px solid $border*/
+	padding: 2em 0
+	font-size: 1rem
+	text-transform: uppercase
+
+#post-wrapper
+	padding: 3em 0
+	.post
+		text-align: left
+		.date
+			font-size: 0.8em
+			margin-bottom: 1em
+		h2
+			margin-bottom: 0
+			font-size: 1.5em
+			text-transform: uppercase
+
+.skinny-wrapper
+	width: 90%
+	max-width: 760px
+	margin: 0 auto
+
+/* pagination */
+
+.pagination:before,
+.pagination:after
+	content: " "
+	display: table
+
+.pagination:after
+	clear:both
+
+.pagination
+	text-align: center
+	margin: 3em 0 0 0
+	a, .previous-page, .current, .next-page
+		padding: 0.75em 1em
+		margin: 0 0.25em
+		border-radius: 0.15em
+		line-height: 20px
+		background: white
+		font-weight: 700
+		font-size: 0.7em
+		font-style: normal
+		color: $dark
+		&:hover
+			background: $highlight
+			color: white
+	.current
+		background: $highlight
+		color: white
+	.disabled
+		color: $light
+		&:hover
+			color: #C0C0C0
+			background: white
+		
+
 
 
