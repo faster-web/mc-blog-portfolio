@@ -1,8 +1,7 @@
+<snippet>
+	<content><![CDATA[
 /* import normalize */
 @import 'normalize'
-
-/* import welcome */
-@import 'welcome'
 
 /* assign colors */
 $dark: #424652
@@ -246,3 +245,10 @@ figure
 		&:hover
 			color: #C0C0C0
 			background: white
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bul-sass-main</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -15,7 +15,7 @@ html
 				a(href="#") $5
 				a(href="#") $6
 		
-		// Insert bul-jd-02-posts or bul-jd-03-home
+		// Insert bul-jd-02-posts or bul-jd-03-home or bul-jd-04-post-show
 		$9
 
 		footer#main-footer

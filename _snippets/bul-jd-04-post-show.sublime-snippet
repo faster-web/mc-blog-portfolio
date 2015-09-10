@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+#post-show-content.wrapper-padding.skinny-wrapper
+	header
+		p.date $1
+		h1 $2
+		hr
+	#content
+		p $3
+		figure
+			img(src="$4", alt="$5")
+		.figcaption $6
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bul-jd-04-post-show</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
